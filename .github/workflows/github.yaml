@@ -5,5 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world action
-        run: echo "Hello world!"
-        run : echo "This is a test of the GitHub Actions workflow."
+        run: |
+          echo "Hello world!"
+          echo "This is a test of the GitHub Actions workflow."
