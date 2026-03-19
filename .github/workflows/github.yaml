@@ -8,3 +8,19 @@ jobs:
         run: |
           echo "Hello world!"
           echo "This is a test of the GitHub Actions workflow."
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          # Add your test commands here
+          echo "Tests completed!"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy application
+        run: |
+          echo "Deploying application..."
+          # Add your deployment commands here
+          echo "Deployment completed!"
