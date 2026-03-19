@@ -10,6 +10,7 @@ jobs:
           echo "This is a test of the GitHub Actions workflow."
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Run tests
         run: |
@@ -18,6 +19,7 @@ jobs:
           echo "Tests completed!"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploy application
         run: |
