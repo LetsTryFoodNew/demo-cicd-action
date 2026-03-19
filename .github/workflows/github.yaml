@@ -6,3 +6,12 @@ jobs:
     steps:
       - name: Hello world action
         run: echo "Hello world!"
+      - name: Hello world action with env
+        env:
+          GREETING: "Hello world with env!"
+        run: echo $GREETING
+      - name: Hello world action with env and args
+        env:
+          GREETING: "Hello world with env and args!"
+        run: echo $GREETING and $1
+        args: "args"
